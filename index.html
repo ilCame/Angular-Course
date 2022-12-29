@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS hello world</title>
+</head>
+<body ng-init="data={name:'ale', isVisible:true, loggedIn: true, status: 'red'}">
+
+<div ng-cloack>
+        <div ng-switch on="data.loggedIn">
+            <div ng-switch-when="true">
+                Welcome {{data.name}}
+            </div>
+            <div ng-switch-default ng-class="data.status">Login</div>
+        </div>
+        <div ng-show="data.isVisible">
+            Name: <input type="text" ng-model="data.name"/>
+            {{data.name}}
+        </div>
+    </div>
+
+    Hide <input type="checkbox" ng-model="isHidden"/>
+    <br />
+    <button ng-click="name='hahah'">Change Name</button>
+    <script src="angular.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Single Page Applications (SPA):
+
+SPAs allow for different views to be loaded into a shell page as the user interacts with that page. is a container
+in witch we can load a view. Using js we can replace the view with another view.
+
+SPA rely on different tech:
+ - DOM manipulation
+ - History
+ - Routing
+ - AJAX
+ - Data Binding
+ ...
+
+Modules: are just containers that components that we build for our application, such as controllers, directives, services,
+have a way to be organized in one little container.
+
+Routes: A rout decide what view gets loaded, is actually a path that you'll see up in the URL of our browser.
+
+A rout is going to have a view and a controller and the Scope, witch is in between will be the model.
+
+The controller will get the data en bind them into the view using directives.
+
+Directives:
+
+ng-cloak: on a div will set the display to none, so it will hide it.
+ng-model: Use the NgModel directive to display a data property and update that property when the user makes changes.
+ng-switch: The ngSwitch directive on a container specifies an expression to match against. The expressions to match are provided by ngSwitchCase directives on views within the container.
+ng-class: used to take data from scss classes
+ng-repeat: iterate a collection
+
+| : is used to add formatters, it's called a pipe, and for example if i add | currency i can see that the value will be formatted as a price
+
+we can use limit to limit how much of a list we want to see, and order by to order a list.
