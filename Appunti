@@ -31,3 +31,7 @@ ng-repeat: iterate a collection
 | : is used to add formatters, it's called a pipe, and for example if i add | currency i can see that the value will be formatted as a price
 
 we can use limit to limit how much of a list we want to see, and order by to order a list.
+
+Modules and controllers
+
+Adding the ng-controller directive to an HTML element creates a child scope
